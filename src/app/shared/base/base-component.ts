@@ -10,10 +10,10 @@ export abstract class BaseComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.initalize();
+        this.onInit();
     }
 
-    protected abstract initalize(): void;
+    protected abstract onInit(): void;
 
     show(): void {
         this.visible = true;
