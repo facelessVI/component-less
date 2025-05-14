@@ -1,6 +1,16 @@
-<app-button
-    id="login-btn"
-    label="Login" 
-    buttonType="primary"
-    (clicked)="onLoginClick()">
-</app-button>
+<div class="app-container">
+    <header class="app-header">
+        <nav>
+            <a routerLink="/components/buttons">Buttons</a>
+            <!-- Add links to other component features as you create them -->
+        </nav>
+    </header>
+
+    <main class="app-content">
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer class="app-footer">
+        <p>Component Library - 2025</p>
+    </footer>
+</div>
