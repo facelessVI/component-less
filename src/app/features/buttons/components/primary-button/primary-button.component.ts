@@ -23,5 +23,6 @@ export class PrimaryButtonComponent extends BaseComponent {
 
     onClick(): void {
         this.clicked.emit();
+        console.log(`Button ${this.id} clicked`);
     }
 }
