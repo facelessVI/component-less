@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BaseComponent } from '../../../../shared/base/base-component';
+import { BaseComponent } from '../../../../../shared/base/base-component';
 
 @Component({
     selector: 'app-primary-button',

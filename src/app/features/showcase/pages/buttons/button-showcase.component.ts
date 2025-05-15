@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimaryButtonComponent } from '../../components/primary-button/primary-button.component';
+import { PrimaryButtonComponent } from '../../../component-library/buttons/components/primary-button/primary-button.component';
 // Import other button components as you create them
 
 @Component({

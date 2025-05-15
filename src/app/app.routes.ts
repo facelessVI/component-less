@@ -3,16 +3,19 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'components/buttons',
+        redirectTo: 'home',
         pathMatch: 'full'
     },
     {
-        path: 'components/buttons',
-        loadChildren: () => import('./features/buttons/buttons.routes').then(m => m.BUTTONS_ROUTES)
+        path: 'home',
+        loadComponent: () => import('./features/showcase/pages/home/home.component').then(m => m.HomeComponent)
     },
-    // Add other feature routes similarly
+    {
+        path: 'components',
+        loadChildren: () => import('./features/showcase/showcase.routes').then(m => m.SHOWCASE_ROUTES)
+    },
     {
         path: '**',
-        redirectTo: 'components/buttons'
+        redirectTo: 'home'
     }
 ];
